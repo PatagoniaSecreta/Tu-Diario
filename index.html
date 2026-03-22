@@ -610,7 +610,7 @@ async function sendMessage(){
   var langCtx=lang==='en'?'Respond in English. Use warm, empathetic language.':'Usás lenguaje argentino con "vos".';
   var sys='Sos '+(lang==='es'?selAvEs:selAvEn)+', el diario personal de '+userName+'. '+avP+' Sos empático/a, amoroso/a, nunca juzgás. '+langCtx+' Respondés en 2-4 oraciones cortas y cálidas. '+moodCtx+' Hacés una pregunta al final.';
   try{
-    var res=await fetch('https://api.anthropic.com/v1/messages',{
+    var res=await fetch('https://api.anthropic.com/v1/messages'{
       method:'POST',headers: {
   'Content-Type': 'application/json',
   'x-api-key': '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',
